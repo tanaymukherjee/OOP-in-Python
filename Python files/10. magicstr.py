@@ -13,8 +13,8 @@ class Book:
     def __str__(self):
         return f"{self.title} by {self.author}, costs {self.price}"
 
-    # The __str__ function is used to return a developer-friendly string
-    # representation of the object
+    # __repr__ should return a printable representation of the object, most likely one of the ways possible to create this object.
+    # See official documentation here. __repr__ is more for developers while __str__ is for end users.
     def __repr__(self):
         return f"title={self.title},author={self.author},price={self.price}"
 
